@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earn | Romi Finance</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/pages/earn.css" />
+    <link rel="stylesheet" href="/desktop.css" />
+    <link rel="stylesheet" href="/reset.css" />
+    <script src="../index.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left">
+        <button id="burger-btn">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            class="App-header-menu-icon"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+            </g>
+          </svg>
+        </button>
+
+        <img src="/assets/header/New Logo.png" alt="" />
+        <span>Romi Finance</span>
+      </div>
+      <nav class="header__center">
+        <a href="/">home</a>
+        <a href="/pages/dashboard.html">dashboard</a>
+        <a href="/">NFT</a>
+        <a href="/pages/earn.html">earn</a>
+        <a href="/">buy</a>
+        <a href="/">referrals</a>
+        <a href="/">ecosystem</a>
+        <a href="/">About</a>
+      </nav>
+      <div class="header__right">
+        <button class="header__right__trade btn">Trade</button>
+        <button class="header__right__connect-wallet btn">
+          <img src="/assets/header/wallet.svg" alt="wallet" />
+          Connect Wallet
+        </button>
+        <div class="header__right__options btn">
+          <button>
+            <img src="/assets/header/ethereum.svg" alt="ethereum" /></button
+          ><button>
+            <img src="/assets/header/three-dots-vertical.svg" alt="options" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav id="mobile-navigation">
+      <div class="m-nav__header">
+        <div class="header__left">
+          <img src="/assets/header/New Logo.png" alt="" />
+          <span>Romi Finance</span>
+        </div>
+
+        <button id="x-btn">
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="App-header-menu-icon"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="m-nav__links">
+        <a href="/">home</a>
+        <a href="/pages/dashboard.html">dashboard</a>
+        <a href="/">NFT</a>
+        <a href="/pages/earn.html">earn</a>
+        <a href="/">buy</a>
+        <a href="/">referrals</a>
+        <a href="/">ecosystem</a>
+        <a href="/">About</a>
+      </div>
+    </nav>
+
+    <main class="earn-main">
+      <section class="earn">
+        <div class="main-section__header">
+          <div>Earn</div>
+          <p>Stake $ROMI and $ZLP to earn rewards.</p>
+        </div>
+
+        <div class="main-section__cards">
+          <div class="main-section__card">
+            <p>$ROMI</p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Price</td>
+                  <td data-underline>$0.00</td>
+                </tr>
+                <tr>
+                  <td>Wallet</td>
+                  <td>... $ROMI ($...)</td>
+                </tr>
+                <tr>
+                  <td>Staked</td>
+                  <td>... $ROMI ($...)</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr>
+                  <td>APR</td>
+                  <td data-underline>...%</td>
+                </tr>
+                <tr>
+                  <td>Rewards</td>
+                  <td data-underline>$...</td>
+                </tr>
+                <tr>
+                  <td>Multiplier Points APR</td>
+                  <td data-underline>100.00%</td>
+                </tr>
+                <tr>
+                  <td>Boost Percentage</td>
+                  <td data-underline>...%</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Total Staked</td>
+                  <td>0 $ROMI ($...)</td>
+                </tr>
+                <tr>
+                  <td>Total Supply</td>
+                  <td>10,000 $ROMI ($10)</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="main-section__card__footer">
+              <button class="btn">Buy $ROMI</button>
+            </div>
+          </div>
+
+          <div class="main-section__card">
+            <p>Total Rewards</p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>ETH (WETH)</td>
+                  <td>... ($...)</td>
+                </tr>
+                <tr>
+                  <td>$ROMI</td>
+                  <td>... ($...)</td>
+                </tr>
+                <tr>
+                  <td>Escrowed $ROMI</td>
+                  <td>... ($...)</td>
+                </tr>
+                <tr>
+                  <td>Multiplier Points</td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <td>Staked Multiplier Points</td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td>$...</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="main-section__card__footer">
+              <button class="btn">Connect Wallet</button>
+            </div>
+          </div>
+
+          <div class="main-section__card">
+            <p>$ZLP (Ethereum)</p>
+
+            <table>
+              <tbody>
+                <tr>
+                  <td>Price</td>
+                  <td>$...</td>
+                </tr>
+                <tr>
+                  <td>Wallet</td>
+                  <td>... $ZLP ($...)</td>
+                </tr>
+                <tr>
+                  <td>Staked</td>
+                  <td>... $ZLP ($...)</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr>
+                  <td>APR</td>
+                  <td data-underline>...%</td>
+                </tr>
+                <tr>
+                  <td>Rewards</td>
+                  <td data-underline>$...</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Total Staked</td>
+                  <td>... $ZLP ($...)</td>
+                </tr>
+                <tr>
+                  <td>Total Supply</td>
+                  <td>... $ZLP ($...)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="main-section__card__footer">
+              <button class="btn">Buy $ZLP</button>
+              <button class="btn">Sell $ZLP</button>
+            </div>
+          </div>
+
+          <div class="main-section__card">
+            <p>Escrowed $ROMI</p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Price</td>
+                  <td>$0.00</td>
+                </tr>
+                <tr>
+                  <td>Wallet</td>
+                  <td>... esROMI ($...)</td>
+                </tr>
+                <tr>
+                  <td>Staked</td>
+                  <td>... esROMI ($...)</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr>
+                  <td>APR</td>
+                  <td data-underline>...%</td>
+                </tr>
+                <tr>
+                  <td>Multiplier Points APR</td>
+                  <td data-underline>100.00%</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Total Staked</td>
+                  <td>... esROMI ($...)</td>
+                </tr>
+                <tr>
+                  <td>Total Supply</td>
+                  <td>1,023,379 esROMI ($1,058)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="main-section__card__footer">
+              <button class="btn">Connect Wallet</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vest">
+        <div class="main-section__header">
+          <div>Vest</div>
+          <p>
+            Convert esROMI tokens to $ROMI tokens.<br />
+            Please read the
+            <a style="text-decoration: underline" href="">vesting details</a>
+            before using the vaults.
+          </p>
+        </div>
+
+        <div class="main-section__cards">
+          <div class="main-section__card">
+            <p>$ROMI Vault</p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Staked Tokens</td>
+                  <td data-underline>...</td>
+                </tr>
+                <tr>
+                  <td>Reserved for Vesting</td>
+                  <td>0.00 / ...</td>
+                </tr>
+                <tr>
+                  <td>Vesting Status</td>
+                  <td data-underline>0.0000 / 0.0000</td>
+                </tr>
+                <tr>
+                  <td>Claimable</td>
+                  <td data-underline>0.0000 $ROMI</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="main-section__card__footer">
+              <button class="btn">Connect Wallet</button>
+            </div>
+          </div>
+
+          <div class="main-section__card">
+            <p>$ZLP Vault</p>
+
+            <table>
+              <tbody>
+                <tr>
+                  <td>Staked Tokens</td>
+                  <td>... $ZLP</td>
+                </tr>
+                <tr>
+                  <td>Reserved for Vesting</td>
+                  <td>0.00 / ...</td>
+                </tr>
+                <tr>
+                  <td>Vesting Status</td>
+                  <td data-underline>0.0000 / 0.0000</td>
+                </tr>
+                <tr>
+                  <td>Claimable</td>
+                  <td data-underline>0.0000 $ROMI</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="main-section__card__footer">
+              <button class="btn">Connect Wallet</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="/assets/header/New Logo.png" alt="" />Romi Finance
+      </div>
+      <div class="footer__social__links">
+        <a class="footer__social__link" href=""
+          ><img src="/assets/footer/twitter.svg" alt=""
+        /></a>
+        <a class="footer__social__link" href=""
+          ><img src="/assets/footer/medium.svg" alt=""
+        /></a>
+        <a class="footer__social__link" href=""
+          ><img src="/assets/footer/github.svg" alt=""
+        /></a>
+        <a class="footer__social__link" href=""
+          ><img src="/assets/footer/romichat.svg" alt=""
+        /></a>
+        <a class="footer__social__link" href=""
+          ><img src="/assets/footer/discord.svg" alt=""
+        /></a>
+      </div>
+      <div class="footer__links">
+        <a class="footer__link" href="#">Terms and Conditions</a>
+        <a class="footer__link" href="#">Referral Terms</a>
+        <a class="footer__link" href="#">Media Kit</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Romi Finance</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/pages/dashboard.css" />
+    <link rel="stylesheet" href="/desktop.css" />
+    <link rel="stylesheet" href="/reset.css" />
+    <script src="../index.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__left">
+        <button id="burger-btn">
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            class="App-header-menu-icon"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+            </g>
+          </svg>
+        </button>
+
+        <img src="/assets/header/New Logo.png" alt="" />
+        <span>Romi Finance</span>
+      </div>
+      <nav class="header__center">
+        <a href="/">home</a>
+        <a href="/pages/dashboard.html">dashboard</a>
+        <a href="/">NFT</a>
+        <a href="/pages/earn.html">earn</a>
+        <a href="/">buy</a>
+        <a href="/">referrals</a>
+        <a href="/">ecosystem</a>
+        <a href="/">About</a>
+      </nav>
+      <div class="header__right">
+        <button class="header__right__trade btn">Trade</button>
+        <button class="header__right__connect-wallet btn">
+          <img src="/assets/header/wallet.svg" alt="wallet" />
+          Connect Wallet
+        </button>
+        <div class="header__right__options btn">
+          <button>
+            <img src="/assets/header/ethereum.svg" alt="ethereum" /></button
+          ><button>
+            <img src="/assets/header/three-dots-vertical.svg" alt="options" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav id="mobile-navigation">
+      <div class="m-nav__header">
+        <div class="header__left">
+          <img src="/assets/header/New Logo.png" alt="" />
+          <span>Romi Finance</span>
+        </div>
+
+        <button id="x-btn">
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="App-header-menu-icon"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="m-nav__links">
+        <a href="/">home</a>
+        <a href="/pages/dashboard.html">dashboard</a>
+        <a href="/">NFT</a>
+        <a href="/pages/earn.html">earn</a>
+        <a href="/">buy</a>
+        <a href="/">referrals</a>
+        <a href="/">ecosystem</a>
+        <a href="/">About</a>
+      </div>
+    </nav>
+
+    <main class="d-main">
+      <section class="stats">
+        <div class="main-section__header">
+          <div class="stats__title">
+            <h1>Stats</h1>
+            <img src="/assets/dashboard/stats.svg" alt="" />
+          </div>
+          <p class="stats__desc">
+            Ethereum Total Stats start from 06 Jan 2022.<br />
+            For detailed stats:
+          </p>
+        </div>
+
+        <div class="main-section__cards">
+          <div class="main-section__card">
+            <p>Overview</p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>AUM</td>
+                  <td data-underline>$34</td>
+                </tr>
+                <tr>
+                  <td>$ZLP Pool</td>
+                  <td data-underline>$34</td>
+                </tr>
+                <tr>
+                  <td>24h Volume</td>
+                  <td data-underline>$0</td>
+                </tr>
+                <tr>
+                  <td>Long Positions</td>
+                  <td data-underline>$0</td>
+                </tr>
+                <tr>
+                  <td>Short Positions</td>
+                  <td data-underline>$0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="main-section__card">
+            <p>Total Stats</p>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Total Fees</td>
+                  <td data-underline>$0</td>
+                </tr>
+                <tr>
+                  <td>Total Volume</td>
+                  <td data-underline>$0</td>
+                </tr>
+                <tr>
+                  <td>Floor Price Fund</td>
+                  <td>$629,421</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="d-tokens">
+        <div class="main-section__header">
+          <div class="d-tokens__title">
+            <h1>Tokens</h1>
+            <img src="/assets/dashboard/stats.svg" alt="" />
+          </div>
+          <p class="d-tokens__desc">Platform and $ZLP index tokens.</p>
+        </div>
+
+        <div class="main-section__cards">
+          <div class="main-section__card">
+            <div class="main-section__card__left">
+              <div class="main-section__card__header">
+                <img src="/assets/dashboard/d-ZLP.svg" alt="" />
+                <div>
+                  <p>$ROMI</p>
+                  <span> $ROMI </span>
+                </div>
+              </div>
+              <hr />
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Price</td>
+                    <td data-underline>0$</td>
+                  </tr>
+                  <tr>
+                    <td>Supply</td>
+                    <td>10,000 $ROMI</td>
+                  </tr>
+                  <tr>
+                    <td>Total Staked</td>
+                    <td data-underline>$0</td>
+                  </tr>
+                  <tr>
+                    <td>Market Cap</td>
+                    <td>$10</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="main-section__card__right">
+              <svg
+                cx="50%"
+                cy="50%"
+                class="recharts-surface"
+                width="210"
+                height="210"
+                viewBox="0 0 210 210"
+                version="1.1">
+                <defs>
+                  <clipPath id="recharts1-clip">
+                    <rect x="5" y="5" height="200" width="200"></rect>
+                  </clipPath>
+                </defs>
+                <g class="recharts-layer recharts-pie">
+                  <g class="recharts-layer recharts-pie-sector">
+                    <path
+                      name="in liquidity"
+                      cx="105"
+                      cy="105"
+                      fill="#0598fa"
+                      stroke="#0598fa"
+                      color="#0598fa"
+                      stroke-width="1"
+                      class="recharts-sector"
+                      d="M 105,25
+                  A 80,80,0,
+                  1,1,
+                  70.73564944631276,32.70923792673068
+                L 73.7337801197604,39.034679608141744
+                          A 73,73,0,
+                          1,0,
+                          105,32 Z"
+                      style="filter: none; cursor: pointer"></path>
+                  </g>
+                  <g class="recharts-layer recharts-pie-sector">
+                    <path
+                      name="not staked"
+                      cx="105"
+                      cy="105"
+                      fill="#5c0af5"
+                      stroke="#5c0af5"
+                      color="#5c0af5"
+                      stroke-width="1"
+                      class="recharts-sector"
+                      d="M 73.27943357547562,31.557466916592972
+                  A 80,80,0,
+                  0,1,
+                  102.20804026379994,25.048733838472344
+                L 102.45233674071744,32.044469627606006
+                          A 73,73,0,
+                          0,0,
+                          76.0549831376215,37.98368856139108 Z"
+                      style="filter: none; cursor: pointer"></path>
+                  </g>
+                  <g class="recharts-layer recharts-pie-sector"></g>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  fill="white"
+                  text-anchor="middle"
+                  dominant-baseline="middle">
+                  Distribution
+                </text>
+              </svg>
+
+              <div class="main-section__card__right__tooltip"></div>
+            </div>
+          </div>
+
+          <div class="main-section__card">
+            <div class="main-section__card__left">
+              <div class="main-section__card__header">
+                <div class="main-section_card__header__relative-img">
+                  <img src="/assets/dashboard/d-$zlp.png" alt="" />
+             
+                  <svg class="main-section_card__header__absolute-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 128 128"><linearGradient id="a" x1="11.85" x2="116.15" y1="116.15" y2="11.85" gradientTransform="matrix(1 0 0 -1 0 128)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6E75B8"/><stop offset="1" stop-color="#495B9D"/></linearGradient><path fill="url(#a)" d="M87.5 128h-47C18.1 128 0 109.9 0 87.5v-47C0 18.1 18.1 0 40.5 0h47C109.9 0 128 18.1 128 40.5v47c0 22.4-18.1 40.5-40.5 40.5z"/><path d="M67.2 89.2v22.7l28.2-39.5zM94.3 65.1l-27.1-45v32.7zM67.2 55.3v28l26.9-15.7zM37.8 65.1l27.1-45v32.7zM64.9 55.3v28L38 67.6zM64.8 89.2v22.7L36.7 72.4z" opacity=".2"/><path fill="#fff" d="M65.2 87.2v22.7l28.2-39.5zM92.3 63.1l-27.1-45v32.7zM65.2 53.3v28l26.9-15.7zM35.8 63.1l27.1-45v32.7zM62.9 53.3v28L36 65.6zM62.8 87.2v22.7L34.7 70.4z"/></svg>
+                </div>
+
+                <div>
+                  <p>$ZLP</p>
+                  <span> $ZLP </span>
+                </div>
+              </div>
+              <hr />
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Price</td>
+                    <td>$1.142</td>
+                  </tr>
+                  <tr>
+                    <td>Supply</td>
+                    <td>29 $ZLP</td>
+                  </tr>
+                  <tr>
+                    <td>Total Staked</td>
+                    <td>$34</td>
+                  </tr>
+                  <tr>
+                    <td>Market Cap</td>
+                    <td>$34</td>
+                  </tr>
+                  <tr>
+                    <td>Stablecoin Percentage</td>
+                    <td>49.50%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="main-section__card__right">
+              <svg
+                cx="50%"
+                cy="50%"
+                class="recharts-surface"
+                width="210"
+                height="210"
+                viewBox="0 0 210 210"
+                version="1.1">
+                <defs>
+                  <clipPath id="recharts3-clip">
+                    <rect x="5" y="5" height="200" width="200"></rect>
+                  </clipPath>
+                </defs>
+                <g class="recharts-layer recharts-pie">
+                  <g class="recharts-layer recharts-pie-sector">
+                    <path
+                      name="ETH"
+                      cx="105"
+                      cy="105"
+                      fill="#6062a6"
+                      stroke="#6062a6"
+                      stroke-width="1"
+                      class="recharts-sector"
+                      d="M 105,25
+                  A 80,80,0,
+                  0,1,
+                  105.33178441162497,184.9993119914428
+                L 105.30275327560778,177.99937219219154
+                          A 73,73,0,
+                          0,0,
+                          105,32 Z"
+                      style="filter: none; cursor: pointer"></path>
+                  </g>
+                  <g class="recharts-layer recharts-pie-sector">
+                    <path
+                      name="USDC"
+                      cx="105"
+                      cy="105"
+                      fill="#2775CA"
+                      stroke="#2775CA"
+                      stroke-width="1"
+                      class="recharts-sector"
+                      d="M 102.5396465724782,184.96215768106612
+                  A 80,80,0,
+                  0,1,
+                  102.20804026379994,25.048733838472344
+                L 102.45233674071744,32.044469627606006
+                          A 73,73,0,
+                          0,0,
+                          102.75492749738636,177.96546888397285 Z"
+                      style="filter: none; cursor: pointer"></path>
+                  </g>
+                  <g class="recharts-layer recharts-pie-sector"></g>
+                  <g class="recharts-layer recharts-pie-sector"></g>
+                </g>
+                <text
+                  x="50%"
+                  y="50%"
+                  fill="white"
+                  text-anchor="middle"
+                  dominant-baseline="middle">
+                  $ZLP Pool
+                </text>
+              </svg>
+
+              <div class="main-section__card__right__tooltip-2"></div>
+
+            </div>
+          </div>
+
+          <div class="main-section__card">
+            <p class="main-section__card__header">
+              $ZLP Index Composition
+              <img
+                style="height: 20px"
+                src="/assets/dashboard/d-ZLP.svg"
+                alt="" />
+            </p>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>TOKEN</th>
+                  <th>PRICE</th>
+                  <th>POOL</th>
+                  <th>WEIGHT</th>
+                  <th>UTILIZATION</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-data__img">
+                    <img src="/assets/dashboard/d-etheream.svg" alt="" />
+                    Ethereum
+                  </td>
+                  <td>$1,796.82</td>
+                  <td data-underline>$19</td>
+                  <td data-underline>50.49% / 25.00%</td>
+                  <td>0.00%</td>
+                </tr>
+                <tr>
+                  <td class="table-data__img">
+                    <img src="/assets/dashboard/Bitcoin.svg" alt="" />
+                    Wrapped Bitcoin
+                  </td>
+                  <td>$34,706.79</td>
+                  <td data-underline>$0</td>
+                  <td data-underline>0.00% / 25.00%</td>
+                  <td>0.00%</td>
+                </tr>
+                <tr>
+                  <td class="table-data__img">
+                    <img src="/assets/dashboard/ApeCoin.svg" alt="" />
+                    ApeCoin
+                  </td>
+                  <td>$1.40</td>
+                  <td data-underline>$0</td>
+                  <td data-underline>0.00% / 25.00%</td>
+                  <td>0.00%</td>
+                </tr>
+                <tr>
+                  <td class="table-data__img">
+                    <img src="/assets/dashboard/USD_Coin.svg" alt="" />
+                    USD Coin
+                  </td>
+                  <td>$1.00</td>
+                  <td data-underline>$14</td>
+                  <td data-underline>49.50% / 25.00%</td>
+                  <td>0.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="/assets/header/New Logo.png" alt="" />Romi Finance
+      </div>
+      <div class="footer__social__links">
+        <a class="footer__social__link" href=""
+          ><img src="/assets/footer/twitter.svg" alt=""
+        /></a>
+        <a class="footer__social__link" href=""
+          ><img src="/assets/footer/medium.svg" alt=""
+        /></a>
+        <a class="footer__social__link" href=""
+          ><img src="/assets/footer/github.svg" alt=""
+        /></a>
+        <a class="footer__social__link" href=""
+          ><img src="/assets/footer/romichat.svg" alt=""
+        /></a>
+        <a class="footer__social__link" href=""
+          ><img src="/assets/footer/discord.svg" alt=""
+        /></a>
+      </div>
+      <div class="footer__links">
+        <a class="footer__link" href="#">Terms and Conditions</a>
+        <a class="footer__link" href="#">Referral Terms</a>
+        <a class="footer__link" href="#">Media Kit</a>
+      </div>
+    </footer>
+  </body>
+</html>
